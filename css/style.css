@@ -1,0 +1,30 @@
+#navbarSupportedContent ul li a{
+    position: relative;
+}
+
+#navbarSupportedContent ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: all .6s ease-out;
+    background-color: red;
+}
+
+#navbarSupportedContent ul li a:hover{
+    color: red;
+    transition: all .3s ease-out;
+}
+
+#navbarSupportedContent ul li a:hover::after{
+    width: 100%;
+}
+
+#searchBar{
+    min-height: 300px;
+    background-size: cover;
+    background-image: url('https://www.trenitalia.com/content/dam/tcom/restyling/info-e-assistenza/1920x410/1920x410-Acq-Online-info%20assist_new.jpg');
+}
+

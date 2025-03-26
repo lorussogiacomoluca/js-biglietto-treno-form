@@ -83,7 +83,7 @@
        
     <main>
     <div class="container-fluid d-flex align-items-end" id="searchBar">
-        <div class="container">
+        <div class="container my-4">
             <div class="row ">
                 <div class="col  ">
                     <form>
@@ -115,11 +115,9 @@
                       </form>
                 </div>
             </div>
-            
-            <h1 class="finalPrice"></h1>
         </div>
     </div>
-    <div class="container my-4 d-none">
+    <div class="container my-4 d-none" id="ticketSection">
         <div class="row">
             <div class="row">
                 <div class="col">
@@ -145,32 +143,32 @@
                                         <div class="col-8">
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-5"><h3>Acquistato da:</h3></div>
-                                                <div class="col-6 text-danger"><h5>Mario rossi</h5></div>
+                                                <div class="col-6 text-danger" id="ticketName"><h5></h5></div>
                                             </div>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-5"><h3>KM:</h3></div>
-                                                <div class="col-6 text-danger"><h5>50</h5></div>
+                                                <div class="col-6 text-danger" id="ticketKm"><h5>50</h5></div>
                                             </div>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-5"><h3>Tariffa:</h3></div>
-                                                <div class="col-6 text-danger"><h5>Young -20%</h5></div>
+                                                <div class="col-6 text-danger" id="ticketTariffa"><h5>Young -20%</h5></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row d-flex justify-content-end">
                                         <div class="col-6">
-                                            <div class="row d-flex align-items-center text-decoration-line-through">
+                                            <div class="row d-flex align-items-center ">
                                                 <div class="col-5"><h3>Prezzo:</h3></div>
-                                                <div class="col-6 text-danger"><h5>50,00 </h5></div>
+                                                <div class="col-6 text-danger text-decoration-line-through" id="initialPrice "><h5>50,00 </h5></div>
                                             </div>
                                             <div class="row d-flex align-items-center ">
                                                 <div class="col-5"><h3>Sconto:</h3></div>
-                                                <div class="col-6 text-danger"><h5>-20,00</h5></div>
+                                                <div class="col-6 text-danger" id="totalDiscount"><h5>-20,00</h5></div>
                                             </div>
                                             <hr>
                                             <div class="row d-flex align-items-center">
                                                 <div class="col-5"><h3>Totale:</h3></div>
-                                                <div class="col-6 text-danger"><h5>20,00</h5></div>
+                                                <div class="col-6 text-danger finalPrice"><h5></h5></div>
                                             </div>
                                         </div>
                                         

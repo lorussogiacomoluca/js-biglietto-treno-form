@@ -3,6 +3,7 @@ const km = document.getElementById('km')
 const age = document.getElementById('age')
 const button = document.getElementById('button')
 const form = document.querySelector('form')
+const finalPrice = document.querySelector('.finalPrice')
 
 //Funzione di calcolo del costo
 const calcPrice = (km, age) => {
@@ -14,7 +15,7 @@ const calcPrice = (km, age) => {
     }else{
         price = km*0.21;
     }
-    return price.toFixed(2);
+    return `€ ${price.toFixed(2).replace('.',',')}`
 }
 
 //Recupero dati dopo button
@@ -27,4 +28,5 @@ form.addEventListener('submit', function(e){
     age.value='';
     const res = calcPrice(input_km, input_age);
     console.log(res);
+    finalPrice.textContent = res
 })

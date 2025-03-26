@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Train Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <form action="">
-        <input required type="number" min="1" placeholder="Inserisci il numero di km" id="km">
-        <input required type="number" min="1" placeholder="Inserisci la tua eta'" id="age">
-        <button type="submit" id="button">Conferma</button>
-    </form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="km" class="form-label">KM da percorrere</label>
+                                <input type="number" min="1" required class="form-control" id="km" placeholder="Inserisci il numero di km">
+                              </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="age" class="form-label">Eta'</label>
+                                <input type="number" min="1" required class="form-control" id="age" placeholder="Inserisci eta'">
+                              </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="button" class="btn btn-primary">Conferma</button>
+                  </form>
+            </div>
+        </div>
+        <h1 class="finalPrice"></h1>
+    </div>
+    
     <script src="./js/script.js"></script>
 </body>
 </html>

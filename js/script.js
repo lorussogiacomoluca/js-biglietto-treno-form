@@ -15,3 +15,14 @@ const calcPrice = (km, age) => {
     }
     return price.toFixed(2);
 }
+
+//Recupero dati dopo button
+button.addEventListener('click', function(){
+    input_km = km.value.trim();
+    input_age = age.value.trim();
+    alert(`Dati ricevuti`)
+    km.value='';
+    age.value='';
+    const res = calcPrice(input_km, input_age);
+    console.log(res);
+})

@@ -28,3 +28,6 @@
     background-image: url('https://www.trenitalia.com/content/dam/tcom/restyling/info-e-assistenza/1920x410/1920x410-Acq-Online-info%20assist_new.jpg');
 }
 
+.navbar-item {
+    white-space: nowrap;
+}
